@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Felipe di Carlo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050505;
+    color:white;
+    font-family:Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top, rgba(0,255,200,0.15), transparent 40%),
+    radial-gradient(circle at bottom, rgba(0,150,255,0.1), transparent 40%);
+}
+
+.grid{
+    position:absolute;
+    width:200%;
+    height:200%;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size:40px 40px;
+    transform:perspective(1000px) rotateX(75deg);
+    animation:gridMove 20s linear infinite;
+}
+
+@keyframes gridMove{
+    from{
+        transform:perspective(1000px) rotateX(75deg) translateY(0);
+    }
+
+    to{
+        transform:perspective(1000px) rotateX(75deg) translateY(40px);
+    }
+}
+
+.container{
+    position:relative;
+    width:90%;
+    max-width:430px;
+    background:rgba(10,10,10,0.85);
+    border:1px solid rgba(0,255,200,0.3);
+    border-radius:28px;
+    padding:40px;
+    text-align:center;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 50px rgba(0,255,200,0.08);
+}
+
+.logo{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:25px;
+    background:#0d0d0d;
+    border:2px solid #00ffd0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    color:#00ffd0;
+    font-weight:bold;
+    box-shadow:0 0 25px rgba(0,255,200,0.2);
+}
+
+h1{
+    font-size:38px;
+    color:#00ffd0;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#9a9a9a;
+    line-height:1.6;
+    margin-bottom:35px;
+}
+
+.link{
+    display:block;
+    text-decoration:none;
+    margin:14px 0;
+    padding:18px;
+    border-radius:16px;
+    background:#121212;
+    border:1px solid rgba(0,255,200,0.2);
+    color:white;
+    transition:0.25s;
+    font-size:17px;
+}
+
+.link:hover{
+    background:#00ffd0;
+    color:black;
+    transform:translateY(-3px);
+    box-shadow:0 0 30px rgba(0,255,200,0.3);
+}
+
+.footer{
+    margin-top:28px;
+    color:#666;
+    font-size:13px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="grid"></div>
+
+<div class="container">
+
+<div class="logo">
+F
+</div>
+
+<h1>Felipe di Carlo</h1>
+
+<div class="subtitle">
+Arquivos 3D • Impressão 3D • Produtos Úteis
+</div>
+
+<a class="link" href="https://drive.google.com/" target="_blank">
+Arquivos STL Gratuitos
+</a>
+
+<a class="link" href="https://mercadolivre.com.br/" target="_blank">
+Loja Mercado Livre
+</a>
+
+<a class="link" href="https://shopee.com.br/" target="_blank">
+Loja Shopee
+</a>
+
+<a class="link" href="https://tiktok.com/" target="_blank">
+TikTok
+</a>
+
+<div class="footer">
+Felipe di Carlo ©
+</div>
+
+</div>
+
+</body>
+</html>
